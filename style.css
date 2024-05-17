@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+/* общие настройки */
+
+body {
+    height: 100%;
+}
+
+#first,
+#second {
+    height: 65vh;
+}
+
+#third,
+#fourth {
+    height: 50vh;
+}
+
+.container {
+    width: 70%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* настройки header */
+
+header {
+    height: 10vh;
+    color: #f9faf8;
+    background-color: black;
+    display: flex;
+}
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+}
+
+header a {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* настройки first контейнера */
+
+#first {
+    display: flex;
+    justify-content: center;
+    background: black
+}
+
+#first .container {
+    display: flex;
+}
+
+.left-column {
+    color: #e5e7eb;
+    font-size: 18px;
+    width: 65%;
+    padding-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.main-text {
+    color: black;
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 8px;
+    -webkit-text-stroke: 1px #f9faf8;
+}
+
+.right-column {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.knopka {
+    font-size: 18px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: .5em 2em;
+    outline: none;
+    border-width: 2px 0;
+    border-style: solid none;
+    border-color: #FDBE33 #000 #D77206;
+    border-radius: 6px;
+    background: linear-gradient(#F3AE0F, #E38916) #E38916;
+    transition: 0.2s;
+    margin: 15px 0px;
+    border: 0.3rem solid #f9faf8;
+  } 
+  .knopka:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+  .knopka:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+
+  /* настройки second контейнера */
+
+  #second {
+    display: flex;
+  }
+
+  #second .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info-title {
+    display: flex;
+    align-items: center;
+    flex-grow: 2;
+    font-size: 36px;
+    font-weight: 900;
+    color: #f9faf8;
+    -webkit-text-stroke: 2px black;
+  }
+
+  .card-container {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 80vw;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: min-content;
+    text-align: center;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.card img {
+    border: 0.3rem solid #D77206;
+    border-radius: 24px;
+    height: 13vw;
+    width: 13vw;
+    object-fit: cover;
+    object-position: bottom;
+    margin-bottom: 0.75rem;
+}
+
+.card p {
+    color: #1f2937;
+    font-size: 1rem;
+}
+
+/* анимация картинок */
+
+.thumbnail {
+    top: -50px;
+    left: -35px;
+    display: block;
+    z-index: 50;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.25);
+    z-index: 99;
+}
+  /* настройки third контейнера */
+
+#third {
+    display: flex;
+    background: #e5e7eb;
+}
+
+#third .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#third p {
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    margin-bottom: 16px;
+}
+
+#third span {
+    align-self: flex-end;
+    color: #1f2937;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+  /* настройки fourth контейнера */
+
+#fourth {
+    display: flex;
+ 
+}
+
+#fourth .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    height: 45%;
+    gap: 24px;
+    background: #D77206;
+    border-radius: 1em;
+    color: #e5e7eb;
+    font-size: 20px;
+    padding: 24px;
+}
+
+.right-call {
+    max-width: 60%;
+}
+
+.call-title {
+    color: var(--main-text);
+    font-size: 26px;
+    font-weight: bold;
+    color: #f9faf8;
+}
+
+.left-call {
+    flex-shrink: 0;
+}
+
+/* footer */
+footer {
+    background: black;
+    color: #f9faf8;
+    text-align: center;
+    font-size: 14px;
+    line-height: 10vh;
+}
